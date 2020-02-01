@@ -1,0 +1,18 @@
+body {
+    font-family: Georgia, Merriweather, Optima, Candara, Calibri, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+h2 {
+    font-family: Helvetica, Arial, serif;
+}
+
+.title {
+    font-family: Helvetica, Arial, serif;
+}
+
+code {
+    font-family: Menlo, Monaco, "Lucida Console", monospace;
+    font-size: 14px;
+}
