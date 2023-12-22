@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Vamsi Talupula"
 theme = "xmin"
 
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "content/contact/*"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "content/contact/.*"]
 footnotereturnlinkcontents = "↩"
 
 # for smart copyright line, leave this blank and check [params.copyright]
@@ -158,10 +158,10 @@ url = "./code"
 identifier = "BitBucket"
 weight = 4
 
-[[menu.main]]
-name = "Contact/Comment"
-url = "./contact/"
-weight = 3
+# [[menu.main]]
+# name = "Contact/Comment"
+# url = "./contact/"
+# weight = 3
 
 [[menu.main]]
 name = "Subscribe"
