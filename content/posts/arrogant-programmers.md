@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Arrogant Programmers
 date: 2018-12-14T12:09:00+05:30
 description: Are some programmers inherently arrogant to advice?
