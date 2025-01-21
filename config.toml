@@ -169,7 +169,7 @@ url = "/index.xml"
 weight = 7
 
 [params]
-footer = "© Vamsi Talupula 2023"
+footer = "© Vamsi Talupula 2025"
 
 [blackfriday]
 hrefTargetBlank = true
