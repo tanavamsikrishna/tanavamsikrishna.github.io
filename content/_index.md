@@ -1,6 +1,5 @@
 ---
 title: Home
 ---
-You have come to Vamsi's website.
-
+Hi, I am Talupula, Vamsi.
 While you are here, peruse the `Articles` section
