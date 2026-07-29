@@ -8,8 +8,6 @@ tags: [programming, software-product-development]
 
 Inspired by this article: [I spent 18 months rebuilding my algorithmic trading platform in Rust. I’m filled with regret.](https://medium.com/codex/i-spent-18-months-rebuilding-my-algorithmic-trading-in-rust-im-filled-with-regret-d300dcc147e0), I want to come clean about my own misadventures with Rust.
 
-I will just go chronologically in this article.
-
 ## 2019 & Early 2020
 Rust was making it into the developer news, memorably as the “most loved programming language". Stack Overflow developer survey has been putting it at the top of that category consistently since then. I started by trying to understand the top paradigms of the language. The compiler tells you what’s wrong! It makes total sense. Why would you ever want to let the program have 2 mutable references?? It perfectly tickled my “ideals” searching mentality. I was convinced anybody who was not adopting Rust right away was a subpar developer.
 
