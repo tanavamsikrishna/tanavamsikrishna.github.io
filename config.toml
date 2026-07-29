@@ -3,7 +3,13 @@ locale = "en-us"
 title = "Vamsi Talupula"
 theme = "xmin"
 
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "content/contact/.*"]
+ignoreFiles = [
+  "\\.Rmd$",
+  "\\.Rmarkdown$",
+  "_files$",
+  "_cache$",
+  "content/contact/.*"
+]
 footnotereturnlinkcontents = "↩"
 
 # for smart copyright line, leave this blank and check [params.copyright]
@@ -17,7 +23,7 @@ id = "UA-132817962-1"
 Paginate = 5
 preserveTaxonomyNames = true
 
-enableRobotsTXT = true # generate robots.txt
+enableRobotsTXT = true  # generate robots.txt
 
 [markup]
 [markup.highlight]
@@ -30,16 +36,21 @@ enableEmoji = true
 # Missing translations will default to this content language
 defaultContentLanguage = "en"
 
+[markup.goldmark.extensions.extras.mark]
+enable = true
+
+[params]
+footer = "© Vamsi Talupula 2025"
+
 [params.info]
 description = "Developing tools to help developers build a better and safer place"
 title404 = "Nothing's here!"
 
 [params.assets]
-
 favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+gopher = ""  # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
@@ -52,8 +63,8 @@ suffix = ""
 dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
 archiveDateFormat = "Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-hideEntryMeta = ["page"] # boolean / array of sections
+hideEntryNavigation = ["page"]  # boolean / array of sections
+hideEntryMeta = ["page"]  # boolean / array of sections
 showReadingTime = true
 showLastmod = true
 taxonomyCloudShuffle = false
@@ -71,12 +82,12 @@ sidebar = ["about", "search", "sidebar_menu", "taxonomy_cloud"]
 footer = ["social_menu"]
 
 [params.opengraph.facebook]
-admins = [] # array of Facebook IDs
+admins = []  # array of Facebook IDs
 appID = ""
 pageID = ""
 
 [params.opengraph.twitter]
-page = "" # Twitter page username
+page = ""  # Twitter page username
 
 [params.seo]
 # Title Separator: - – — · • * ⋆ | ~ « » < >
@@ -92,8 +103,8 @@ enable = false
 # Isso: https://posativ.org/isso/
 [params.comments.isso]
 enable = false
-scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
-dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
+scriptSrc = ""  # "https://isso.example.com/js/embed.min.js"
+dataAttrs = ""  # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [params.comments.staticman]
 enable = true
@@ -106,14 +117,14 @@ branch = "master"
 # Utterances: https://utteranc.es
 [params.comments.utterances]
 enable = false
-issueTerm = "pathname" # pathname / url / title
+issueTerm = "pathname"  # pathname / url / title
 
 [params.comments.utterances.github]
 username = "achary"
 repository = "engimo"
 
 [params.search]
-client = "fuse" # algolia / fuse / lunr
+client = "fuse"  # algolia / fuse / lunr
 
 [params.search.algolia]
 appId = ""
@@ -170,13 +181,11 @@ name = "Subscribe"
 url = "/index.xml"
 weight = 7
 
-[params]
-footer = "© Vamsi Talupula 2025"
-
 [blackfriday]
 hrefTargetBlank = true
 
 [languages]
+
 # edit this block for your own language
 [languages.en]
 lang = "en"
