@@ -18,18 +18,25 @@ But at that time Rust still has got nowhere near the adoption it got today.
 ## Mid 2020
 Like it was in vogue during that time, I quit my job, which is not ideal. One thing led to another and I wanted to create a SaaS Product, detailed of which are irrelevant to this article. To layout the components there would be a backend (or may be 2), a front-end, a browser plugin while leveraging Firebase.
 
-> Of course, the backend had to be in Rust.
-
 I had no prior serious, or any, work experience with Rust. But I can go through a book in a couple of days if I had to. So that is what I did with the one they listed on their website.
 
+"Of course, the backend had to be in Rust."
 ## End of 2020
 
-There is another wrong decision which can be deduced from the content of the article upto this point. It was the Firebase + Rust combo. Firebase does not maintain a Rust SDK. But as there was an HTTP API, making HTTP calls directly was the plan. And Firebase’s API, like any large service’s API, is fine-tuned for each call. By that I mean, you are going to see multi-part file uploads which need binary demarkations between each part. Handling User SSO authentication (“Signing with Google”) and validating JWT. Backend access token refresh. Building the object of firebase DB’s document which has nuanced schema. And more. All of which I built by hand. It was at this point it become clear to me that the whole thing was a stupid mistake. The trigger was … *the incessant compiler errors*. It was the cocktail of:
+There is another wrong decision which can be deduced from the content of the article upto this point. It was the Firebase + Rust combo. Firebase does not maintain a Rust SDK. But as there was an HTTP API, making HTTP calls directly was the plan. And Firebase’s API, like any large service’s API, is fine-tuned for each call. By that I mean, you are going to see multi-part file uploads and multi-file uploads which need specific binary code demarkations between each file. Handling User SSO authentication (“Signing with Google”) and validating JWT. Periodic backend access token refresh. Building the objects of Firebase DB’s related calls which had nuanced schema. And more. All of which I built by hand. But it was also at this point it become clear to me that the whole thing was a stupid mistake. The trigger was … *the incessant compiler errors* on each incremental addition of a feature. It was the cocktail of:
 * can’t borrow a captured outer variable in a FnMut
 * async on trait functions not allowed
 * variable x doesn’t live long enough
 * ...
 
-> Do I even know the ABC of software development?
+"Do I even know the ABC of software development?"
 
-Some parts was of my own making. I jumped straight into using `proc_macros`, `macro_rules`, excessive lifetime specification.
+Some parts of it was of my own making. I jumped straight into using `proc_macros`, `macro_rules`, excessive usage of lifetime constructs on variables.
+
+"No to the “bulky" `String` and use `Cow<‘a, str>` instead"
+
+It was something wholly avoidable with lesser technical ambitions.
+
+_On the topic of macros, are we supposed to remember a whole new weakly structured language called Rust macros? For example to use `serde` in the macros style?_
+
+Building the frontend in Svelte, a language I haven’t used before, was a pleasure.
