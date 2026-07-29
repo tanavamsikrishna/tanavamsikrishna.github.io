@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: My Experiment with Rust
 date: 2026-07-30T00:23:33+0530
 description: How not to go about a software project
