@@ -1,5 +1,5 @@
 baseURL = "/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Vamsi Talupula"
 theme = "xmin"
 
@@ -10,7 +10,9 @@ footnotereturnlinkcontents = "↩"
 copyright = ""
 
 disqusShortname = ""
-googleAnalytics = "UA-132817962-1"
+
+[services.googleAnalytics]
+id = "UA-132817962-1"
 
 Paginate = 5
 preserveTaxonomyNames = true
@@ -178,5 +180,5 @@ hrefTargetBlank = true
 # edit this block for your own language
 [languages.en]
 lang = "en"
-languageName = "English"
+label = "English"
 weight = 1
