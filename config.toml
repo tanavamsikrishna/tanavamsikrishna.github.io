@@ -40,7 +40,7 @@ defaultContentLanguage = "en"
 enable = true
 
 [params]
-footer = "© Vamsi Talupula 2025"
+footer = "© Vamsi Talupula 2026"
 
 [params.info]
 description = "Developing tools to help developers build a better and safer place"
