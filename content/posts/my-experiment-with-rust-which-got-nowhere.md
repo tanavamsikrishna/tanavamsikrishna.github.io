@@ -37,8 +37,7 @@ Some parts of it were of my own making. I jumped straight into using `proc_macro
 
 "No to the 'bulky' `String` and use `Cow<'a, str>` instead"
 
-It was something wholly avoidable with lesser technical ambitions.
-
-_On the topic of macros, are we supposed to remember a whole new weakly structured language called Rust macros? For example to use `serde` in the macros style?_
+It was something wholly avoidable with lesser technical ambitions. Rust macros, both `proc_macros` & `macro_rules` are whole new languages with their own syntax. The macros they create need to be remembered like you would remember some disjoint pieces of information. For example, while trying to make a struct serializable using the `serde` crate, I had to continuously refer to the serde documentation for any bespoke use cases. And that is going to be the case for other packages as well. Each with their own idea of how should macro definitions be exposed.
+ 
 
 Building the frontend in Svelte, a framework I haven't used before, was a pleasure.
