@@ -20,7 +20,7 @@ Like it was in vogue during that time, I quit my job, which is not ideal. One th
 
 I had no prior serious, or any, work experience with Rust. But I can go through a book in a couple of days if I had to. So that is what I did with the one they listed on their website.
 
-"Of course, the backend had to be in Rust."
+"Of course, the backend has to be in Rust."
 
 ## End of 2020
 
