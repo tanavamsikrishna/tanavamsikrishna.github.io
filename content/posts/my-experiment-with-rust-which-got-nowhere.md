@@ -10,7 +10,7 @@ Inspired by this article: [I spent 18 months rebuilding my algorithmic trading p
 
 ## 2019 & Early 2020
 
-Rust was making it into the developer news, memorably as the "most loved programming language". Stack Overflow developer survey has been putting it at the top of that category consistently since then. I started by trying to understand the top paradigms of the language. The compiler tells you what's wrong! It makes total sense. Why would you ever want to let the program have 2 mutable references?? It perfectly tickled my "ideals" searching mentality. I was convinced anybody who was not adopting Rust right away was a subpar developer.
+Rust was making it into the developer news, memorably as the "most loved programming language". Stack Overflow developer survey has been putting it at the top of that category consistently since then. I started by trying to understand the top paradigms of the language. The compiler tells you what's wrong! It makes total sense. Why would you ever want to let the program have 2 mutable references?? It perfectly tickled my "ideals" searching mentality, the promise of order among chaos. I was convinced anybody who was not adopting Rust right away was a subpar developer.
 
 But at that time Rust still had got nowhere near the adoption it got today.
 
@@ -21,6 +21,7 @@ Like it was in vogue during that time, I quit my job, which is not ideal. One th
 I had no prior serious, or any, work experience with Rust. But I can go through a book in a couple of days if I had to. So that is what I did with the one they listed on their website.
 
 "Of course, the backend had to be in Rust."
+
 ## End of 2020
 
 There is another wrong decision which can be deduced from the content of the article up to this point. It was the Firebase + Rust combo. Firebase does not maintain a Rust SDK. But as there was an HTTP API, making HTTP calls directly was the plan. And Firebase's API, like any large service's API, is fine-tuned for each call. By that I mean, you are going to see multi-part file uploads and multi-file uploads which need specific binary code demarcations between each file. Handling User SSO authentication ("Signing with Google") and validating JWT; periodic backend access token refresh; building the objects of Firebase DB's related calls which had nuanced schema; and more. All of which I built by hand. But it was also at this point it became clear to me that the whole thing was a stupid mistake. The trigger was *the incessant compiler errors* on each incremental addition of a feature. It was the cocktail of:
@@ -40,4 +41,4 @@ It was something wholly avoidable with lesser technical ambitions.
 
 _On the topic of macros, are we supposed to remember a whole new weakly structured language called Rust macros? For example to use `serde` in the macros style?_
 
-Building the frontend in Svelte, a language I haven't used before, was a pleasure.
+Building the frontend in Svelte, a framework I haven't used before, was a pleasure.
